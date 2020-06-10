@@ -1,3 +1,4 @@
+
 <div>
 <h2>Name: <%= @restaurant.name %></h2>
 
@@ -9,6 +10,10 @@
   <strong>Type of food:</strong>
   <%= @restaurant.category %>
   </p>
+  <p>
+  <% @restaurant.reviews.each do |r| %> <%= r.content %>
+  </p>
 </div>
 <br>
 <%= link_to "Take me back", restaurants_path, class: "btn btn-primary" %>
+<% end %>
