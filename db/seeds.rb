@@ -10,11 +10,11 @@ Restaurant.destroy_all
 
 puts "2. Creating restaurants"
 
-tapas = { name: "tapatapa", address: "Paseo Gracia", category: "italian" }
-nomo = { name: "Nomo", address: "gracia", category: "italian" }
-barturo = { name: "Turo", address: "turo park", category: "italian" }
-dishoom = { name: "Dishoom", address: "7 Boundary St, London E2 7JE", category: "italian" }
-pizza_east = { name: "Pizza East", address: "56A Shoreditch High St, London E1 6PQ", category: "italian" }
+tapas = { name: "tapatapa", address: "Paseo Gracia", category: "italian", phone_number: "999999999" }
+nomo = { name: "Nomo", address: "gracia", category: "italian", phone_number: "9999999" }
+barturo = { name: "Turo", address: "turo park", category: "italian", phone_number: "9999999" }
+dishoom = { name: "Dishoom", address: "7 Boundary St, London E2 7JE", category: "italian", phone_number: "333333"}
+pizza_east = { name: "Pizza East", address: "56A Shoreditch High St, London E1 6PQ", category: "italian", phone_number: "77777777" }
 
 counter = 3
 [ tapas, nomo, barturo, dishoom, pizza_east ].each do |attributes|
