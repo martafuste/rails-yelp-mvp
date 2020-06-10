@@ -1,6 +1,7 @@
 class RestaurantsController < ApplicationController
+  before_action :set_restaurant, only: [:show, :edit]
   def index
-    @restaurant = Restaurant.all
+    @restaurants = Restaurant.all
   end
 
   def show

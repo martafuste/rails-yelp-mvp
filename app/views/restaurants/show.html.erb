@@ -1,10 +1,14 @@
 <div>
-<h2>Name:</h2>
-  <%= @restaurant.name %>
+<h2>Name: <%= @restaurant.name %></h2>
 
-  <strong>Address:</strong>
+
+  <p><strong>Address:</strong>
   <%= @restaurant.address %>
-
+  </p>
+  <p>
   <strong>Type of food:</strong>
   <%= @restaurant.category %>
+  </p>
 </div>
+<br>
+<%= link_to "Take me back", restaurants_path, class: "btn btn-primary" %>

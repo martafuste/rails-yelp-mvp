@@ -17,8 +17,8 @@
         <td><%= restaurant.address %></td>
         <td><%= restaurant.category %></td>
         <td><%= link_to 'Show', restaurant %></td>
-        <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
-        <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class = "btn"><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
+
       </tr>
     <% end %>
   </tbody>
